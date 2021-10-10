@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Add product form</title>
+	<link rel="stylesheet" href= "addproductstyle.css">
+	<script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+	
+</head>
+
+<body>
+<section class="showcase">
+<header>
+<h2 class="logo">StyleIn.</h2>
+<div class="toggle"></div>
+</header>
+<div class = "container">
+<h2 class = "lg-title"> ADD PRODUCT </h2>
+<center>
+<hr size="5px" width="300px" color= "#3B89CA" align="center">
+<p class = "text-light" style="margin-bottom: 30px">Update products list right away!</p>
+	</center>
+	
+	   <center>
+<div class="form-wrap">
+     
+<form>
+<div class="formmargin">  <label>Product Name</label>
+ <input class="formspace" style="margin-top: 10px">
+	</div>
+	<div class="formmargin">
+<div class="formmargin">	<label>Category</label>
+
+<select class="formspace" style="margin-top: 10px">
+                      <option selected>Select category</option>
+                      <option value="1">New Arrivals</option>
+                      <option value="2">Bestseller</option>
+                      <option value="3">Out of Stock</option>
+                    </select>
+	</div>
+<div class="formmargin">	<label>Units left in stock</label>
+ <input class="formspace" style="margin-top: 10px">
+		</div>
+	
+<div class="formmargin">	<label>Units sold out</label>
+ <input class="formspace" style="margin-top: 10px">
+		</div>
+	
+<div class="formmargin">	<label>Price</label>
+ <input class="formspace" style="margin-top: 10px">
+		</div>
+
+<div class="imageupload">
+<i class="fas fa-cloud-upload-alt tm-upload-icon"></i>
+ </div>
+<div class="custom-file mt-3 mb-3">
+                  <input id="fileInput" type="file" style="display:none;" />
+	<input
+				    type="button"
+                    class="product-btns btn-cart"
+                    value="UPLOAD PRODUCT IMAGE"
+                    onclick="document.getElementById('fileInput').click();"
+                  /> 
+ <div class="col-12">
+                <button type="submit" class= "product-btns btn-cart" >Add Product Now</button>
+              </div>
+	</div>
+	</div>
+            </form>
+
+        </div>
+        </center>
+	</div>
+	</section>
+	<div class="menu">
+    <ul>
+      <li><a href= "index.html" >Home</a></li>
+      <li><a href= "Allproducts.html" >All Products</a></li>
+      <li><a href= "Supplierspage.html">Suppliers</a></li>
+	  <li><a href= "OrderStatus.html">Order Details</a></li>
+    </ul>
+  </div>
+</body>
+	<script>
+ const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+	</script>
+</html>

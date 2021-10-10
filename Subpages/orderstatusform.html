@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Add Order form</title>
+	<link rel="stylesheet" href= "orderstatusformstyle.css">
+	<script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+	
+</head>
+
+<body>
+<section class="showcase">
+<header>
+<h2 class="logo">StyleIn.</h2>
+<div class="toggle"></div>
+</header>
+<div class = "container">
+<h2 class = "lg-title">ADD ORDER </h2>
+<center>
+<hr size="5px" width="250px" color= "#3B89CA" align="center">
+<p class = "text-light" style="margin-bottom: 30px"> Your order is on the way!</p>
+	</center>
+	
+	   <center>
+<div class="form-wrap">
+     
+<form>
+<div class="formmargin">  <label>S.No.</label>
+ <input class="formspace" style="margin-top: 10px">
+	</div>
+	<div class="formmargin">  <label>Order No.</label>
+ <input class="formspace" style="margin-top: 10px">
+	</div>
+	<div class="formmargin">
+<div class="formmargin">	<label>Status</label>
+
+<select class="formspace" style="margin-top: 10px">
+                      <option selected>Select category</option>
+                      <option value="1">Moving</option>
+                      <option value="2">Pending</option>
+                      <option value="3">Cancelled</option>
+                    </select>
+	</div>
+<div class="formmargin">	<label>Buyer</label>
+ <input class="formspace" style="margin-top: 10px">
+		</div>
+	
+<div class="formmargin">	<label>Location</label>
+ <input class="formspace" style="margin-top: 10px">
+		</div>
+	
+<div class="formmargin">	<label>Price</label>
+ <input class="formspace" style="margin-top: 10px">
+		</div>
+
+		<div class="formmargin">	<label for="meeting-time">Start Date </label>
+
+<input type="datetime-local" id="meeting-time" class="formspace" style="margin-top: 10px"
+       name="meeting-time" value="2018-06-12T19:30"
+       min="2018-06-07T00:00" max="2018-06-14T00:00">
+		</div>
+		
+		<div class="formmargin">	<label for="meeting-time">Estimated Delivery Due </label>
+
+<input type="datetime-local" id="meeting-time" class="formspace" style="margin-top: 10px"
+       name="meeting-time" value="2018-06-12T19:30"
+       min="2018-06-07T00:00" max="2018-06-14T00:00">
+
+		</div>
+		
+ <div class="col-12">
+                <button type="submit" class= "product-btns btn-cart" >Add order Now</button>
+              </div>
+	</div>
+            </form>
+
+        </div>
+        </center>
+	</div>
+	</section>
+	<div class="menu">
+    <ul>
+      <li><a href= "index.html" >Home</a></li>
+      <li><a href= "Allproducts.html" >All Products</a></li>
+      <li><a href= "Supplierspage.html">Suppliers</a></li>
+	  <li><a href= "OrderStatus.html">Order Details</a></li>
+    </ul>
+  </div>
+</body>
+	<script>
+ const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+	</script>
+</html>

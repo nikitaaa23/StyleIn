@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Suppliers page</title>
+	<link rel="stylesheet" href= "suppliers.css">
+	<script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+	
+</head>
+
+<body>
+<section class="showcase">
+<header>
+<h2 class="logo">StyleIn.</h2>
+<div class="toggle"></div>
+</header>
+<div class = "container">
+<h2 class = "lg-title"> SUPPLIERS </h2>
+<center>
+<hr size="5px" width="240px" color= "#3B89CA" align="center">
+<p class = "text-light">Domestic and International Traders</p>
+	</center>
+	<div class="table">
+<center>
+<table>
+  <tr>
+  <th>S. No.</th>  
+  <th>Name of Supplier</th>
+  <th>Material Type</th>
+  <th>Location</th>
+  <th>Latest Order</th>
+  <th>Cost of Last Order</th>
+  </tr>
+  <tr>
+  <td>1.</td>
+  <td>Arvind Textile Industries</td>
+  <td>Fabric</td>
+  <td>Gujarat, India</td>
+  <td>100% Cotton - 1000m </td>
+	  <td>Rs. 30,000</td>
+	</tr>
+	<tr>
+  <td>2.</td>
+  <td>Aarvee Denims</td>
+  <td>Fabric</td>
+  <td>Maharastra, India</td>
+  <td>Twill Denim - 2050m </td>
+	  <td>Rs. 1,84,500</td>
+	</tr>
+	<tr>
+  <td>3.</td>
+  <td>IIGM </td>
+  <td>Machinaries</td>
+  <td>Bengaluru, India</td>
+  <td>Automatic Cutting Machine </td>
+	  <td>Rs. 2Cr</td>
+	</tr>
+	<tr>
+  <td>4.</td>
+  <td>Welspun</td>
+  <td>Yarns</td>
+  <td>Maharastra, India</td>
+  <td>Polyester blend yarn - 18000 Spools </td>
+	  <td> Rs. 57,600</td>
+	</tr>
+	<tr>
+  <td>5.</td>
+  <td>Foreign Trade Metals</td>
+  <td>Trims</td>
+  <td>Punjab, India</td>
+  <td>Dress Zipper - 16"</td>
+	  <td> Rs. 90,080</td>
+	</tr>
+	<tr>
+  <td>6.</td>
+  <td>Juki </td>
+  <td>Machinaries</td>
+  <td>Japan</td>
+  <td>SNLS - DDL900C (20 Units)</td>
+	  <td> Rs. 7,19,980</td>
+	</tr>
+	<tr>
+  <td>7.</td>
+  <td>SHIMA SEIKI</td>
+  <td>Machinaries</td>
+  <td>Punjab, India</td>
+  <td>SFG20 - Glove/Sock Knitting Machine (2 Units)</td>
+	  <td> Rs. 30.75 lacs</td>
+	</tr>
+	<tr>
+  <td>8.</td>
+  <td>KP Industries Pvt. Ltd.</td>
+  <td>Trims</td>
+  <td>Daman and Diu, India</td>
+  <td>Chantilly Lace - 2000m</td>
+	  <td> Rs. 5100</td>
+	</tr>
+	<tr>
+  <td>9.</td>
+  <td>Mood Fabrics</td>
+  <td>Fabric</td>
+  <td>New York, US</td>
+  <td>Organic Cotton Twill - 1400 m </td>
+	  <td> Rs. 1,68,000</td>
+	</tr>
+	<tr>
+  <td>10.</td>
+  <td>Foreign Trade Metals</td>
+  <td>Trims</td>
+  <td>Punjab, India</td>
+  <td>Tassels -Small Ivory Beaded</td>
+	  <td> Rs. 67,20,000</td>
+	</tr>
+</table>
+</center>
+</div>
+	<center>
+<div class = "product-btns">
+	<a href= "addsupplierform.html">
+              <button type = "button" class = "btn-cart"> 
+				  <span><i class="fas fa-plus fa-fw"></i></span>&nbsp;&nbsp; Add New 
+              </button>
+		</a> 
+	</div>
+		</center>
+	</div>
+	</section>
+	<div class="menu">
+    <ul>
+      <li><a href= "index.html" >Home</a></li>
+      <li><a href= "Allproducts.html" >All Products</a></li>
+      <li><a href= "Supplierspage.html">Suppliers</a></li>
+	  <li><a href= "OrderStatus.html">Order Details</a></li>
+    </ul>
+  </div>
+	</body>
+	<script>
+ const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+	</script>
+	</html>

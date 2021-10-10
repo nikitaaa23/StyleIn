@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Add Supplier form</title>
+	<link rel="stylesheet" href= "addproductstyle.css">
+	<script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+	
+</head>
+
+<body>
+<section class="showcase">
+<header>
+<h2 class="logo">StyleIn.</h2>
+<div class="toggle"></div>
+</header>
+<div class = "container">
+<h2 class = "lg-title"> ADD SUPPLIER </h2>
+<center>
+<hr size="5px" width="300px" color= "#3B89CA" align="center">
+<p class = "text-light" style="margin-bottom: 30px">The raw materials are incoming!</p>
+	</center>
+	
+	   <center>
+<div class="form-wrap">
+     
+<form>
+<div class="formmargin">  <label>S. No.</label>
+ <input class="formspace" style="margin-top: 10px">
+	</div>
+	<div class="formmargin">  <label>Name of supplier</label>
+ <input class="formspace" style="margin-top: 10px">
+	</div>
+	<div class="formmargin">
+<div class="formmargin">	<label>Material Type</label>
+
+<select class="formspace" style="margin-top: 10px">
+                      <option selected>Select category</option>
+                      <option value="1">Yarns</option>
+                      <option value="2">Fabrics</option>
+                      <option value="3">Machinaries</option>
+	                  <option value="4">Trims</option>
+                    </select>
+	</div>
+<div class="formmargin">	<label>Location</label>
+ <input class="formspace" style="margin-top: 10px">
+		</div>
+	
+<div class="formmargin">	<label>Latest Order</label>
+ <input class="formspace" style="margin-top: 10px">
+		</div>
+	
+<div class="formmargin">	<label>Cost of Last Order</label>
+ <input class="formspace" style="margin-top: 10px">
+		</div>
+
+ <div class="col-12">
+                <button type="submit" class= "product-btns btn-cart" >Add Supplier Now</button>
+              </div>
+	</div>
+            </form>
+
+        </div>
+        </center>
+	</div>
+	</section>
+	<div class="menu">
+    <ul>
+      <li><a href= "index.html" >Home</a></li>
+      <li><a href= "Allproducts.html" >All Products</a></li>
+      <li><a href= "Supplierspage.html">Suppliers</a></li>
+	  <li><a href= "OrderStatus.html">Order Details</a></li>
+    </ul>
+  </div>
+</body>
+	<script>
+ const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+	</script>
+</html>
